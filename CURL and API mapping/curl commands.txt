@@ -1,0 +1,41 @@
+1. Create a new user
+curl -X POST http://localhost:8000/createuser/ -H "Content-Type: application/x-www-form-urlencoded" -d "username=katlego3" -d "password=katlego2" -d "email=sk@gmail.c"
+
+
+2. Login
+curl -X POST http://localhost:8000/login/ -H "Content-Type: application/x-www-form-urlencoded" -d "username=katlego2" -d "password=katlego2"
+
+3. Create,update and delete a savings account
+curl -X POST http://localhost:8000/savings/ -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" -d "balance=50"
+curl -X PATCH http://localhost:8000/savings/?acc_id=4 -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" -d "balance=500"
+curl -X DELETE http://localhost:8000/savings/?acc_id=2 -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" 
+
+4. Create,update and delete a credit account
+curl -X POST http://localhost:8000/credit/ -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token d9d81961f0d574c76fb5052e259027cae5e1f140" -d "balance=0"
+curl -X PATCH http://localhost:8000/credit/?acc_id=2 -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" -d "balance=5000"
+curl -X DELETE http://localhost:8000/credit/?acc_id=2 -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" 
+
+5. Transact in a savings acccount
+
+deposit:   curl -X POST http://localhost:8000/savings/transact/?type=deposit -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" -d "amount=50" -d "acc_id=3"
+widthdraw: curl -X POST http://localhost:8000/savings/transact/?type=widthdraw -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" -d "amount=50" -d "acc_id=3"
+
+5. Transact in a credit acccount
+
+deposit:   curl -X POST http://localhost:8000/credit/transact/?type=deposit -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" -d "amount=50" -d "acc_id=3"
+widthdraw: curl -X POST http://localhost:8000/credit/transact/?type=widthdraw -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c" -d "amount=50" -d "acc_id=3"
+
+6. Get accounts,balances,last 10 transactions
+
+curl -X GET http://localhost:8000/balances/ -H "Accept: application/json" -H "Authorization: Token 1a5a0d136d6cdaa0fd6f4796d5db39ca54ea323c"
+
+
+7. Get CSV file
+
+* View from terminal:
+
+curl -X GET http://localhost:8000/csv/
+
+* Download from browser
+
+http://localhost:8000/csv/

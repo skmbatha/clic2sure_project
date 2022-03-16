@@ -1,0 +1,10 @@
+copy django_pydoc.py to folder with manage.py then run these commands:
+
+python django_pydoc.py -w app.views
+python django_pydoc.py -w app.models
+python django_pydoc.py -w app.admin
+python django_pydoc.py -w app.serializers
+python django_pydoc.py -w app.urls
+python django_pydoc.py -w app.tests
+
+to generate documentation

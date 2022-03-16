@@ -1,0 +1,4 @@
+Django==4.0.3
+djangorestframework==3.13.1
+docutils==0.18.1
+factory-boy==3.2.1
