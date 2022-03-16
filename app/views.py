@@ -149,7 +149,8 @@ class SavingsAPIView(APIView):
         savings.save()
         
         return Response({
-            'message': 'Savings account successfully created for {}'.format(user.username)
+            'message': 'Savings account successfully created for {}'.format(user.username),
+            'acc_id':savings.pk
         })           
 
     def patch(self, request, *args, **kwargs):
@@ -294,7 +295,8 @@ class CreditAPIView(APIView):
         credit.save()
         
         return Response({
-            'message': 'Credit account successfully created for {}'.format(user.username)
+            'message': 'Credit account successfully created for {}'.format(user.username),
+            'acc_id':credit.pk
         })           
 
     def patch(self, request, *args, **kwargs):

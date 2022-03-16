@@ -35,6 +35,10 @@ Please run the project at port 8000. The reason for this is that:
 Otherwise, you must manually change the port in the code...which you should probably NEVER do.!
 
 
+##  Authentication method
+
+This project uses a Token based authentication methods. All request are protected and need the user to pass in a token received after a successful login into the header. For example if token received is _123456789_, the header shoul dbe _Authorization: Token 12345789_. This information is already explained in the PDF document ***/CURL and API mapping/CURL Communication and API map.pdf***  as described in section 2 of this document. 
+
 
 
 # 2. Docs, API Map and CURL
@@ -46,7 +50,7 @@ The code is extensively documented using DOC_STRINGS. The module PyDoc was used 
 
 ## API mapping
 
-The API mapping to the program features/functions is tabulated and described in _Table 1_ of the PDF document ***/CURL and API mapping/CURL Communication and API map.pdf***. 
+The API mapping to the program features / functions is tabulated and described in _Table 1_ of the PDF document ***/CURL and API mapping/CURL Communication and API map.pdf***. 
 
 
 ## CURL commands
@@ -81,7 +85,7 @@ The tests results will show in _Terminal 2_.
 # 4. Populating DB with dummy data
 
 In the project the script to perform a randomized data loading into the DB is a command. This file is placed in ***/app/management/commands/setup_test_data.py***. This commands uses ***/app/factories.py***
-which is a class using the native python ```factory``` and ```factory.django``` packages to generate dummy data creation. The command performa 5 operations:
+which is a class using the native python ```factory``` and ```factory.django``` packages to generate dummy data creation. The command performas 5 operations:
 
 * Deletes all records from the database for all tables except for the superuser account in the User table.
 * Creates new 5 dummy users using ```UserFactory```.
