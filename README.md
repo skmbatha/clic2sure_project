@@ -19,9 +19,9 @@ command below.
 
 THE DEVSERVER runs at port 8000 by default, but pass in the option to be sure.
 
-'''
+```
 python manage.py runserver 8000
-'''
+```
 
 
 ## Running at port 8000
