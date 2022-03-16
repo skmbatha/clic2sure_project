@@ -10,8 +10,8 @@ from django.contrib.auth.hashers import ( PBKDF2PasswordHasher)
 
 
 NUM_USERS = 5
-NUM_CREDIT_ACCOUNTS = 20
 NUM_SAVINGS_ACCOUNTS = 30
+NUM_CREDIT_ACCOUNTS = 20
 NUMBER_OF_TRANSACTIONS = 100
 
 
