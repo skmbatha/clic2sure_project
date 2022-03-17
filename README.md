@@ -77,7 +77,7 @@ then run the following command in _Terminal 2_ to run perform a test run,
 ```
 python manage.py test
 ```
-
+ 
 The tests results will show in _Terminal 2_.
 
 
