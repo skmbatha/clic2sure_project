@@ -17,7 +17,7 @@ The dev server can be started by running the command (specified below) from the 
 of python you have installed you might have to use ```python3``` instead of ```python``` in the
 commands.
 
-THE DEVSERVER runs at port 8000 by default, but pass in the option to be ensure it does.
+THE DEVSERVER runs at port 8000 by default, but pass in the option to ensure it does.
 
 ```
 python manage.py runserver 8000
