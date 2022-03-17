@@ -38,7 +38,7 @@ Otherwise, you must manually change the port in the code...which you should prob
 
 ##  Authentication method
 
-This project uses a Token based authentication method. Most of the API routes are protected and need the user to pass in a token received after a successful login. Only the ***/createuser/*** and ***/login/*** routes are unprotected. The token should be passed into the request header. For example, if the token received is _123456789_, the header should have _Authorization: Token 12345789_. This information is also explained in the PDF document ***/CURL and API mapping/CURL Communication and API map.pdf***.
+This project uses a Token based authentication method. Most of the API routes are protected and need the user to pass-in a token received after a successful login. Only the ***/createuser/***, ***/login/*** and ***/csv/*** routes are unprotected. The token should be passed into the request header. For example, if the token received is _123456789_, the header should have _Authorization: Token 12345789_. This information is also explained in the PDF document ***/CURL and API mapping/CURL Communication and API map.pdf***.
 
 
 
