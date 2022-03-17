@@ -90,9 +90,9 @@ which is a class that uses the native python ```factory``` and ```factory.django
 
 * Deletes all records from the database for all tables except for the superuser account in the User table.
 * Creates new 5 dummy users using ```UserFactory``` class defined in ***/app/factories.py***.
-* Creates new 30 savings accounts for random existing users using ```SavingsAccountFactory``` class defined in ***/app/factories.py**.
-* Creates new 20 credit accounts for random existing users using ```CreditAccountFactory``` class defined in ***/app/factories.py**.
-* Creates new 100 transactions for random users and acccounts using```TransactionFactory``` class defined in ***/app/factories.py**.
+* Creates new 30 savings accounts for random existing users using ```SavingsAccountFactory``` class defined in ***/app/factories.py***.
+* Creates new 20 credit accounts for random existing users using ```CreditAccountFactory``` class defined in ***/app/factories.py***.
+* Creates new 100 transactions for random users and acccounts using```TransactionFactory``` class defined in ***/app/factories.py***.
 
 To run the dummy data creation and population, run the following command from the project root (where the manage.py file resides).
 
