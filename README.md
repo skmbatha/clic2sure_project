@@ -63,7 +63,7 @@ The use of CURL commands and how they are communicate with the backend API is de
 
 # 3. Running tests
 
-The Unit tests inherit from the Django Rest Framework APITestCase class. These test's \_\_doc\_\_ strings provide information on what requirement per the supplied project definition document (PDD) the test case is testing. They also give a brief description of the test steps. The test function names are also self explanatory. Furthermore, the ***/docs/app.test.html***  can be used to find the test case information. Comments are embedded in the code for further clarity.
+The Unit tests inherit from the Django Rest Framework APITestCase class. These test's \_\_doc\_\_ strings provide information on what requirement per the supplied project definition document (PDD) the test case is testing. They also give a brief description of the test steps. The test method names are also self explanatory. Furthermore, the ***/docs/app.test.html***  can be used to find the test case information. Comments are embedded in the code for further clarity.
 
 To perform a test run, open two terminals both in the project root (where the manage.py file resides).
 First start the server by issuing this command in _Terminal 1_:
