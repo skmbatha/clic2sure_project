@@ -2,7 +2,7 @@
 
 ## Setting up the environment
 
-To run the project, a virtual environment must be created and the following packages should be installed using the the Python PIP tool. Alternatively, teh project can run but these modules should be installed (System wide).
+To run the project, a virtual environment must be created and the following packages should be installed using the the Python PIP tool. Alternatively, the project can run on the system installed Python but these modules should be installed (System wide).
 
 * Django==4.0.3
 * djangorestframework==3.13.1
